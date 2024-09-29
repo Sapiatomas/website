@@ -158,8 +158,8 @@
    * Testimonials slider
    */
   new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
+  loop: false,  // Desactivar el loop si no lo necesitas
+  autoplay: false,  // Desactivar autoplay
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
@@ -231,8 +231,8 @@
    * Portfolio details slider
    */
   new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
+    loop: false,  // Desactivar el loop si no lo necesitas
+  autoplay: false,  // Desactivar autoplay
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
