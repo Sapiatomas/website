@@ -1052,7 +1052,7 @@ section .container {
     padding: 15px!important;
 
      } 
-   #player {
+   .html5-video-player  {
        width: 50%!important;
 
 
@@ -1104,7 +1104,7 @@ section .container {
   }
 
   @media (max-width: 425px) {
-#player{
+.html5-video-player {
       width: 50%!important;
   }
 }
