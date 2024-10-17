@@ -1052,6 +1052,11 @@ section .container {
     padding: 15px!important;
 
      } 
+   #player {
+    width: 50%;
+
+
+    } 
 .desktop{
 
     } 
@@ -1099,9 +1104,8 @@ section .container {
   }
 
   @media (max-width: 425px) {
-
-     
-.desktop{
+#player{
+      width: 50%;
   }
 }
 
