@@ -29,13 +29,33 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Personal
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Custom Styles -->
+  <style>
+    .portfolio-images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-y: scroll; /* Scroll vertical */
+      max-height: 90vh; /* Altura máxima de la sección */
+      padding-right: 15px;
+    }
+
+    .portfolio-images img {
+      max-height: 90vh;
+      object-fit: contain;
+      margin-bottom: 20px; /* Margen inferior entre imágenes */
+    }
+
+    /* Ocultar scrollbar en navegadores WebKit (Chrome, Safari) */
+    .portfolio-images::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Firefox: Ocultar scrollbar */
+    .portfolio-images {
+      scrollbar-width: none; /* Ocultar barra de desplazamiento */
+    }
+  </style>
 </head>
 
 <body>
@@ -46,61 +66,26 @@
     <div id="portfolio-details" class="portfolio-details">
       <div class="container">
 
-        <div class="row"  >
- <h2 class="portfolio-title" >Hadir</h2>
- <p class="portfolio-text" >Photos in Hamburgo</p>
-           
-          <div class="col-lg-12 foto" style="margin: auto;" >
+        <div class="row">
+          <h2 class="portfolio-title">Hadir</h2>
+          <p class="portfolio-text">Photos in Hamburg</p>
 
-
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-
-    <div class="portfolio-details-slider swiper">
-        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 300ms;">
-            
-            <div class="swiper-slide" style="width: 100%;">
-                <img src="assets/img/portfolio/Tzina/1.jpg" alt="" style="max-height: 90vh; object-fit: contain; display: block; margin: 0 auto; margin-bottom: 20px;"> <!-- Añadido margen inferior -->
+          <div class="col-lg-12 foto" style="margin: auto;">
+            <!-- Contenedor para las imágenes -->
+            <div class="portfolio-images">
+              <img src="assets/img/portfolio/Tzina/1.jpg" alt="">
+              <img src="assets/img/portfolio/Tzina/2.png" alt="">
+              <img src="assets/img/portfolio/Tzina/3.jpg" alt="">
+              <img src="assets/img/portfolio/Tzina/4.jpg" alt="">
+              <img src="assets/img/portfolio/Tzina/5.png" alt="">
             </div>
-
-            <div class="swiper-slide" style="width: 100%;">
-                <img src="assets/img/portfolio/Tzina/2.png" alt="" style="max-height: 90vh; object-fit: contain; display: block; margin: 0 auto; margin-bottom: 20px;"> <!-- Añadido margen inferior -->
-            </div>
-
-            <div class="swiper-slide" style="width: 100%;">
-                <img src="assets/img/portfolio/Tzina/3.jpg" alt="" style="max-height: 90vh; object-fit: contain; display: block; margin: 0 auto; margin-bottom: 20px;"> <!-- Añadido margen inferior -->
-            </div>
-
-            <div class="swiper-slide" style="width: 100%;">
-                <img src="assets/img/portfolio/Tzina/4.jpg" alt="" style="max-height: 90vh; object-fit: contain; display: block; margin: 0 auto; margin-bottom: 20px;"> <!-- Añadido margen inferior -->
-            </div>
-
-            <div class="swiper-slide" style="width: 100%;">
-                <img src="assets/img/portfolio/Tzina/5.png" alt="" style="max-height: 90vh; object-fit: contain; display: block; margin: 0 auto; margin-bottom: 20px;"> <!-- Añadido margen inferior -->
-            </div>
-
-       
-           
+          </div>
 
         </div>
-
-        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-            <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span>
-            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
-            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
-            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
-            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span>
-            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span>
-            <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span>
-        </div>
-    </div>
-
-
 
       </div>
     </div><!-- End Portfolio Details -->
- </div>
+
   </main><!-- End #main -->
 
   <!-- Vendor JS Files -->
