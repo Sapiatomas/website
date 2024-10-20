@@ -22,7 +22,6 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
 
   <!-- Template Main CSS File -->
@@ -32,26 +31,21 @@
     /* Estilo para ocultar el scrollbar mientras se permite el scroll */
     .portfolio-details-slider {
       max-height: 500px; /* Altura máxima para el contenedor de las imágenes */
-      overflow-y: scroll; /* Agrega scroll vertical */
+      overflow-y: auto; /* Agrega scroll vertical */
       scrollbar-width: none; /* Para navegadores Firefox */
       -ms-overflow-style: none; /* Para navegadores Internet Explorer y Edge */
-      padding-bottom: 0; /* Sin padding en la parte inferior */
-      margin-bottom: 0; /* Sin margen en la parte inferior */
     }
 
     .portfolio-details-slider::-webkit-scrollbar {
       display: none; /* Para navegadores Webkit como Chrome y Safari */
     }
 
-    .swiper-slide {
-      margin-bottom: 0; /* Sin margen entre slides */
-    }
-
-    .swiper-slide img {
+    .portfolio-details-slider img {
       width: 100%;
       height: auto;
       object-fit: contain;
       display: block;
+      margin-bottom: 20px; /* Espacio entre las imágenes */
     }
 
     /* Agregar estilo para el contenedor para eliminar el borde inferior */
@@ -82,37 +76,14 @@
           <p class="portfolio-text">The late night Early Jazz Band in Berlin.</p>
 
           <div class="col-lg-12 foto" style="margin: auto;">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/timeragdepartment/5.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/timeragdepartment/1.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/timeragdepartment/2.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/timeragdepartment/3.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/timeragdepartment/4.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/timeragdepartment/6.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/timeragdepartment/7.jpg" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
+            <div class="portfolio-details-slider" style="overflow: hidden;">
+              <img src="assets/img/portfolio/timeragdepartment/5.jpg" alt="">
+              <img src="assets/img/portfolio/timeragdepartment/1.jpg" alt="">
+              <img src="assets/img/portfolio/timeragdepartment/2.jpg" alt="">
+              <img src="assets/img/portfolio/timeragdepartment/3.jpg" alt="">
+              <img src="assets/img/portfolio/timeragdepartment/4.jpg" alt="">
+              <img src="assets/img/portfolio/timeragdepartment/6.jpg" alt="">
+              <img src="assets/img/portfolio/timeragdepartment/7.jpg" alt="">
             </div>
           </div>
 
@@ -128,7 +99,6 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
