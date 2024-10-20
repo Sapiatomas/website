@@ -25,9 +25,40 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
 
-
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    /* Estilo para ocultar el scrollbar mientras se permite el scroll */
+    .portfolio-details-slider {
+      max-height: 500px; /* Altura máxima para el contenedor de las imágenes */
+      overflow-y: scroll; /* Agrega scroll vertical */
+      scrollbar-width: none; /* Para navegadores Firefox */
+      -ms-overflow-style: none; /* Para navegadores Internet Explorer y Edge */
+      padding-bottom: 0; /* Sin padding en la parte inferior */
+      margin-bottom: 0; /* Sin margen en la parte inferior */
+    }
+
+    .portfolio-details-slider::-webkit-scrollbar {
+      display: none; /* Para navegadores Webkit como Chrome y Safari */
+    }
+
+    .swiper-slide {
+      margin-bottom: 0; /* Sin margen entre slides */
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    /* Agregar estilo para el contenedor para eliminar el borde inferior */
+    #portfolio-details {
+      padding-bottom: 0; /* Sin padding en la parte inferior */
+    }
+  </style>
 
   <!-- =======================================================
   * Template Name: Personal
@@ -46,61 +77,51 @@
     <div id="portfolio-details" class="portfolio-details">
       <div class="container">
 
-        <div class="row"  >
- <h2 class="portfolio-title" >Time Rag Departmen</h2>
- <p class="portfolio-text" >The late night Early Jazz Band in Berlin.</p>
-           
-          <div class="col-lg-12 foto" style="margin: auto;" >
+        <div class="row">
+          <h2 class="portfolio-title">Time Rag Department</h2>
+          <p class="portfolio-text">The late night Early Jazz Band in Berlin.</p>
 
-
+          <div class="col-lg-12 foto" style="margin: auto;">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
-                  <div class="swiper-slide">
-                  <img src="assets/img/portfolio/timeragdepartment/5.jpg"  alt="">
-                </div>
-
-                   <div class="swiper-slide">
-                  <img src="assets/img/portfolio/timeragdepartment/1.jpg"  alt="">
-                </div>
-                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/timeragdepartment/2.jpg"  alt="">
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/timeragdepartment/5.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/timeragdepartment/3.jpg"  alt="">
+                  <img src="assets/img/portfolio/timeragdepartment/1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/timeragdepartment/2.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/timeragdepartment/4.jpg"  alt="">
+                  <img src="assets/img/portfolio/timeragdepartment/3.jpg" alt="">
                 </div>
-              
-                  <div class="swiper-slide">
-                  <img src="assets/img/portfolio/timeragdepartment/6.jpg"  alt="">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/timeragdepartment/4.jpg" alt="">
                 </div>
-                  <div class="swiper-slide">
-                  <img src="assets/img/portfolio/timeragdepartment/7.jpg"  alt="">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/timeragdepartment/6.jpg" alt="">
                 </div>
-             
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/timeragdepartment/7.jpg" alt="">
+                </div>
 
               </div>
               <div class="swiper-pagination"></div>
             </div>
-
           </div>
 
-      
-
         </div>
-
-        
 
       </div>
     </div><!-- End Portfolio Details -->
 
   </main><!-- End #main -->
-
- 
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
