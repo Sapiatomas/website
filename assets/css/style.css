@@ -110,6 +110,30 @@ h1, h2, h3, h4, h5, h6 {
   background: #ffe000d6;
 }
 @media (max-width: 992px) {
+#header h1 a, #header h1 a:hover {
+    color: #ffffff;
+   
+}
+      #header .social-links a {
+  
+    color: #ffffff;
+
+}
+      #header h2 span {
+    color: #ffffff;
+    border-bottom: 2px solid #ffe000d6;
+    padding-bottom: 6px;
+}
+      .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    color: #ffffff;
+}
+
+      .navbar a, .navbar a:focus {
+ 
+    color: #ffffff;
+   
+}
+      
   #header h1 {
     font-size: 36px;
   }
