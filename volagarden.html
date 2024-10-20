@@ -27,35 +27,35 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Custom CSS to hide scroll -->
   <style>
     /* Ajustar el margen superior del título */
     .portfolio-title {
-      margin-top: 30px; /* Cambiado a 30px */
+      margin-top: 30px;
     }
 
     /* Estilos para las imágenes */
     .portfolio-images {
       display: flex;
-      flex-direction: column; /* Coloca las imágenes en columna */
-      align-items: center; /* Centra las imágenes */
-      overflow-y: auto; /* Permite el desplazamiento vertical */
-      max-height: 100vh; /* Máxima altura de la ventana */
+      flex-direction: column;
+      align-items: center;
+      overflow-y: scroll; /* Scroll habilitado */
+      max-height: 100vh;
+      scrollbar-width: none; /* Firefox oculta el scrollbar */
+    }
+
+    /* Ocultar scrollbar en navegadores WebKit (Chrome, Safari) */
+    .portfolio-images::-webkit-scrollbar {
+      display: none;
     }
 
     .portfolio-images img {
-      width: 100%; /* Asegura que las imágenes ocupen el ancho completo */
-      max-width: 800px; /* Limita el ancho máximo */
-      margin-bottom: 15px; /* Espaciado entre imágenes */
+      width: 100%;
+      max-width: 800px;
+      margin-bottom: 15px;
     }
   </style>
 
-  <!-- =======================================================
-  * Template Name: Personal
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -75,12 +75,11 @@
             <!-- Contenedor para las imágenes -->
             <div class="portfolio-images">
               <img src="assets/img/portfolio/vola/5.jpg" alt="">
-               <img src="assets/img/portfolio/vola/1.jpg" alt="">
-               <img src="assets/img/portfolio/vola/2.jpg" alt="">
-               <img src="assets/img/portfolio/vola/3.jpg" alt="">
-               <img src="assets/img/portfolio/vola/4.jpg" alt="">
-               <img src="assets/img/portfolio/vola/6.jpg" alt="">
-          
+              <img src="assets/img/portfolio/vola/1.jpg" alt="">
+              <img src="assets/img/portfolio/vola/2.jpg" alt="">
+              <img src="assets/img/portfolio/vola/3.jpg" alt="">
+              <img src="assets/img/portfolio/vola/4.jpg" alt="">
+              <img src="assets/img/portfolio/vola/6.jpg" alt="">
             </div>
 
           </div>
