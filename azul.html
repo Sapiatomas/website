@@ -29,9 +29,14 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <style>
-    /* Ocultar scrollbar para navegadores que soportan Webkit */
-    #portfolio-details::-webkit-scrollbar {
+    /* Ocultar scrollbar en navegadores WebKit (Chrome, Safari) */
+    .scroll-container::-webkit-scrollbar {
       display: none;
+    }
+
+    /* Ocultar scrollbar en Firefox */
+    .scroll-container {
+      scrollbar-width: none; /* Ocultar scrollbar en Firefox */
     }
 
     /* Ajustar el margen superior del título */
@@ -39,17 +44,10 @@
       margin-top: 40px; /* Ajusta este valor según el margen que prefieras */
     }
 
-    /* Ocultar el scrollbar vertical */
-    #portfolio-details {
-      overflow-y: scroll; 
-      scrollbar-width: none; 
-      -ms-overflow-style: none; 
-    }
-
     /* Estilo del contenedor de desplazamiento vertical */
     .scroll-container {
       max-height: 500px; /* Altura máxima del contenedor */
-      overflow-y: auto; /* Permitir desplazamiento vertical */
+      overflow-y: scroll; /* Permitir desplazamiento vertical */
       padding-top: 30px; /* Ajustar el padding superior */
     }
 
