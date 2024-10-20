@@ -28,18 +28,23 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <style>
-    /* Estilos para el contenedor de desplazamiento */
+    /* Estilos para el contenedor de desplazamiento vertical */
     .scroll-container {
-      display: flex;
-      overflow-x: auto;
-      padding-top: 30px; /* Ajusta el padding superior */
-      scroll-behavior: smooth; /* Agrega un desplazamiento suave */
+      max-height: 500px; /* Altura máxima del contenedor */
+      overflow-y: auto; /* Permite el desplazamiento vertical */
+      padding-top: 30px; /* Espaciado en la parte superior */
+      scrollbar-width: none; /* Para navegadores Firefox */
+      -ms-overflow-style: none; /* Para navegadores Internet Explorer y Edge */
+    }
+
+    .scroll-container::-webkit-scrollbar {
+      display: none; /* Para navegadores Webkit como Chrome y Safari */
     }
 
     .scroll-container img {
-      width: 300px; /* Ancho fijo para las imágenes */
+      width: 100%; /* Ancho completo de las imágenes */
       height: auto; /* Altura automática para mantener la relación de aspecto */
-      margin-right: 10px; /* Espaciado entre las imágenes */
+      margin-bottom: 20px; /* Espaciado entre las imágenes */
       border-radius: 5px; /* Esquinas redondeadas */
     }
 
