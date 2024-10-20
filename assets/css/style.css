@@ -854,9 +854,9 @@ color: #989898;
 }
 
 .portfolio-details .container {
-  padding-top: 20px;
-  padding-bottom: 80px;       
+  padding:0px!important;     
       max-width: 90%!important;
+
 }
 .portfolio-details .portfolio-title {
  text-align: center;
