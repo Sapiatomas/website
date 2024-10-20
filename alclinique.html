@@ -31,34 +31,23 @@
   <style>
     /* Ocultar scrollbar para navegadores que soportan Webkit */
     .scroll-container::-webkit-scrollbar {
-      display: none;
+      display: none; /* Oculta la scrollbar en navegadores Webkit */
     }
 
-    /* Ajustar el margen superior del título */
-    .portfolio-title {
-      margin-top: 40px; /* Ajusta este valor según el margen que prefieras */
-    }
-
-    /* Estilo del contenedor de desplazamiento */
+    /* Estilo del contenedor de desplazamiento vertical */
     .scroll-container {
-      display: flex;
-      overflow-x: auto;
-      padding-top: 30px; /* Ajusta el padding superior */
-      scroll-behavior: smooth; /* Agrega un desplazamiento suave */
+      max-height: 500px; /* Altura máxima del contenedor */
+      overflow-y: auto; /* Permitir desplazamiento vertical */
+      padding-top: 30px; /* Ajustar el padding superior */
+      scrollbar-width: none; /* Oculta la scrollbar en Firefox */
+      -ms-overflow-style: none; /* Oculta la scrollbar en IE y Edge */
     }
 
     .scroll-container img {
-      width: 300px; /* Ancho fijo para las imágenes */
+      width: 100%; /* Las imágenes ocuparán todo el ancho */
       height: auto; /* Altura automática para mantener la relación de aspecto */
-      margin-right: 10px; /* Espaciado entre las imágenes */
+      margin-bottom: 20px; /* Espaciado entre las imágenes */
       border-radius: 5px; /* Esquinas redondeadas */
-    }
-
-    /* Ocultar el scrollbar vertical */
-    #portfolio-details {
-      overflow-y: hidden; 
-      scrollbar-width: none; 
-      -ms-overflow-style: none; 
     }
 
     /* Ajuste para pantallas más pequeñas */
@@ -66,6 +55,11 @@
       .scroll-container img {
         width: 100%; /* Las imágenes ocuparán todo el ancho en dispositivos móviles */
       }
+    }
+
+    /* Ajustar el margen superior del título */
+    .portfolio-title {
+      margin-top: 40px; /* Ajusta este valor según el margen que prefieras */
     }
   </style>
 
