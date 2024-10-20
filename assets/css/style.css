@@ -117,13 +117,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #000000;
       }
           #header h1 a, #header h1 a:hover {
-        color: #000000;
+        color: #ffffff;
     }
       .mobile-nav-toggle {
     color: #000000;
 }
 #header h1 a, #header h1 a:hover {
-    color: #000000;
+    color: #ffffff;
    
 }
       #header .social-links a {
