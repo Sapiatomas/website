@@ -163,8 +163,8 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
   }
-       #header .header-top a {
-        color: #000000!important;
+          #header.header-top h1 a {
+        color: black;
     }
 }
 }
