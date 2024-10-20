@@ -1075,22 +1075,7 @@ Tomas Sapia - Visual Designer and Photographer                <i class="bx bxs-q
   <script src="assets/js/main.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const backgroundOverlay = document.getElementById('background-overlay');
-            const portfolioLink = document.querySelector('a.nav-link[href="#portfolio"]');
-
-            portfolioLink.addEventListener('click', function (event) {
-                event.preventDefault(); // Previene el comportamiento por defecto del enlace
-                backgroundOverlay.style.display = 'block'; // Muestra el fondo ofuscado
-
-                // Simulamos la navegación a la página de portfolio aquí
-                setTimeout(function () {
-                    window.location.href = 'portfolio.html'; // Cambia esto por la URL de tu página de portfolio
-                }, 500); // Espera 0.5 segundos para dar tiempo al fondo
-            });
-        });
-    </script>
+ 
 </body>
 
 </html>
