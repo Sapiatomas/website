@@ -28,6 +28,30 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <style>
+    /* Ajustar el margen superior del título */
+    .portfolio-title {
+      margin-top: 30px; /* Cambiado a 30px */
+    }
+
+    /* Estilo para el iframe para que ocupe toda la pantalla */
+    .portfolio-details-slider {
+      position: relative;
+      overflow: hidden; /* Asegura que no se desborde */
+      width: 100%; /* 100% del ancho del contenedor */
+      height: 100vh; /* 100% de la altura de la ventana */
+    }
+
+    .portfolio-details-slider iframe {
+      position: absolute; /* Posiciona el iframe */
+      top: 0; /* Alinea al top */
+      left: 0; /* Alinea a la izquierda */
+      width: 100%; /* 100% del ancho */
+      height: 100%; /* 100% de la altura */
+      border: none; /* Sin borde */
+    }
+  </style>
+
   <!-- =======================================================
   * Template Name: Personal
   * Updated: Mar 10 2023 with Bootstrap v5.2.3
@@ -45,7 +69,7 @@
     <div id="portfolio-details" class="portfolio-details">
       <div class="container">
 
-        <div class="row" >
+        <div class="row">
           <h2 class="portfolio-title">Lina y Pedro</h2>
           <p class="portfolio-text">Video for a circus company in berlin</p>
 
@@ -57,7 +81,9 @@
 
                 <!-- Replace image with video -->
                 <div class="swiper-slide">
-<iframe width="660" height="415" src="https://www.youtube.com/embed/e9M5mVs1GJg?si=rOG6unEK36Mizpq1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>              </div>
+                  <iframe src="https://www.youtube.com/embed/e9M5mVs1GJg?si=rOG6unEK36Mizpq1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
               <!-- Remove the automatic slide -->
               <div class="swiper-pagination"></div>
             </div>
