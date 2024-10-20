@@ -34,8 +34,13 @@
       max-height: 500px; /* Altura máxima del contenedor */
       overflow-y: auto; /* Permitir desplazamiento vertical */
       padding-top: 30px; /* Ajustar el padding superior */
-      scrollbar-width: thin; /* Ancho de la scrollbar en Firefox */
-      -ms-overflow-style: -ms-autohiding-scrollbar; /* Scrollbar en IE y Edge */
+      scrollbar-width: none; /* Ocultar scrollbar en Firefox */
+      -ms-overflow-style: none; /* Ocultar scrollbar en IE y Edge */
+    }
+
+    /* Para navegadores WebKit (Chrome, Safari) */
+    .scroll-container::-webkit-scrollbar {
+      display: none; /* Ocultar scrollbar */
     }
 
     .scroll-container img {
