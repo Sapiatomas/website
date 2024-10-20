@@ -32,10 +32,14 @@
     /* Estilo del contenedor de desplazamiento vertical */
     .scroll-container {
       max-height: 500px; /* Altura máxima del contenedor */
-      overflow-y: auto; /* Permitir desplazamiento vertical */
+      overflow-y: scroll; /* Permitir desplazamiento vertical */
       padding-top: 30px; /* Ajustar el padding superior */
-      scrollbar-width: thin; /* Ancho de la scrollbar en Firefox */
-      -ms-overflow-style: -ms-autohiding-scrollbar; /* Scrollbar en IE y Edge */
+      scrollbar-width: none; /* Para navegadores Firefox */
+      -ms-overflow-style: none; /* Para IE y Edge */
+    }
+
+    .scroll-container::-webkit-scrollbar {
+      display: none; /* Para navegadores Webkit como Chrome y Safari */
     }
 
     .scroll-container img {
@@ -70,7 +74,7 @@
 
         <div class="row">
           <h2 class="portfolio-title">Filomena - Trial and error</h2>
-          <p class="portfolio-text">Photos taken event of Trial and error</p>
+          <p class="portfolio-text">Photos taken at the event of Trial and error</p>
           
           <div class="col-lg-12 foto" style="margin: auto;">
             <!-- Contenedor de desplazamiento para imágenes -->
