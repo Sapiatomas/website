@@ -702,7 +702,7 @@ section .container {
   border-radius: 4px;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-color: f#989898;
+color: #989898;
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
