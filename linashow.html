@@ -2,46 +2,101 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Full Screen Video</title>
-  
-  <style>
-    /* Asegurarse de que el body y el html ocupen todo el espacio disponible */
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    /* El contenedor de video también ocupa todo el espacio */
+  <title>Portfolio Details - Personal Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Custom CSS to make video larger -->
+  <style>
     .video-container {
       position: relative;
-      width: 100%;
-      height: 100%;
+      padding-bottom: 42.85%; /* 21:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%; /* Video occupies 100% of width */
+      margin: auto; /* Center the video */
+      background: #000;
     }
 
-    /* El video ocupa el ancho y la altura completa de la ventana */
-    video {
+    .video-container iframe {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover; /* Hace que el video cubra todo el espacio sin deformarse */
+    }
+
+    @media (max-width: 768px) {
+      .video-container {
+        max-width: 100%; /* On mobile, video takes full width */
+        padding-bottom: 56.25%; /* Switch to 16:9 on mobile */
+      }
     }
   </style>
+
 </head>
 
 <body>
 
-  <div class="video-container">
-    <!-- Video local o de alguna URL -->
-    <video autoplay muted loop>
-      <source src="ruta-del-video.mp4" type="video/mp4">
-      Tu navegador no soporta el video.
-    </video>
-  </div>
+  <main id="main">
+
+    <!-- ======= Portfolio Details ======= -->
+    <div id="portfolio-details" class="portfolio-details" style="padding-top: 30px;">
+      <div class="container">
+
+        <div class="row">
+          <h2 class="portfolio-title">Vola</h2>
+          <p class="portfolio-text">Video for a circus company in Berlin</p>
+
+          <div class="col-lg-12" style="margin: auto;">
+
+            <!-- Video Container -->
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/e9M5mVs1GJg?si=f9d0nAlC6gIsiKC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div><!-- End Portfolio Details -->
+
+  </main><!-- End #main -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
