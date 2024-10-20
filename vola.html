@@ -28,13 +28,34 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Personal
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Custom CSS to make video larger -->
+  <style>
+    .video-container {
+      position: relative;
+      padding-bottom: 42.85%; /* 21:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 90%; /* Video occupies 90% of width */
+      margin: auto; /* Center the video */
+      background: #000;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .video-container {
+        max-width: 100%; /* On mobile, video takes full width */
+        padding-bottom: 56.25%; /* Switch to 16:9 on mobile */
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -42,27 +63,18 @@
   <main id="main">
 
     <!-- ======= Portfolio Details ======= -->
-    <div id="portfolio-details" class="portfolio-details">
+    <div id="portfolio-details" class="portfolio-details" style="padding-top: 100px;">
       <div class="container">
 
-        <div class="row" >
+        <div class="row">
           <h2 class="portfolio-title">Vola</h2>
-          <p class="portfolio-text">Video for a circus company in berlin</p>
+          <p class="portfolio-text">Video for a circus company in Berlin</p>
 
-          <div class="col-lg-12 foto" style="margin: auto;">
+          <div class="col-lg-12" style="margin: auto;">
 
-            <!-- Portfolio Details Slider -->
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <!-- Replace image with video -->
-                <div class="swiper-slide">
-            <iframe width="660" height="415" src="https://www.youtube.com/embed/FWQ0oPzoye8?si=VVVu7hhfqqpJDNK1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-
-              </div>
-              <!-- Remove the automatic slide -->
-              <div class="swiper-pagination"></div>
+            <!-- Video Container -->
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/FWQ0oPzoye8?si=VVVu7hhfqqpJDNK1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
           </div>
@@ -85,18 +97,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <script>
-    // Disable autoplay for swiper slider
-    var swiper = new Swiper('.swiper', {
-      loop: false,  // Disable loop if needed
-      autoplay: false,  // Disable autoplay
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-      }
-    });
-  </script>
 
 </body>
 
