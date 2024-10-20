@@ -124,13 +124,13 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 2px solid #ffe000d6;
     padding-bottom: 6px;
 }
-      .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-    color: #ffffff;
+ .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    color: #ffffff!important;
 }
 
       .navbar a, .navbar a:focus {
  
-    color: #ffffff;
+    color: #ffffff!important;
    
 }
       
