@@ -28,44 +28,32 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Personal
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   <style>
-    /* Estilo para ocultar el scrollbar mientras se permite el scroll */
-    .portfolio-details-slider {
-      max-height: 500px; /* Altura máxima para el contenedor de las imágenes */
-      overflow-y: scroll; /* Agrega scroll vertical */
-      scrollbar-width: none; /* Para navegadores Firefox */
-      -ms-overflow-style: none; /* Para navegadores Internet Explorer y Edge */
-      padding-bottom: 0; /* Sin padding en la parte inferior */
-      margin-bottom: 0; /* Sin margen en la parte inferior */
+    /* Estilo para las imágenes en columna */
+    .portfolio-images {
+      max-height: 500px; /* Altura máxima para el contenedor */
+      overflow-y: auto; /* Agregar scroll si excede la altura */
     }
 
-    .portfolio-details-slider::-webkit-scrollbar {
-      display: none; /* Para navegadores Webkit como Chrome y Safari */
-    }
-
-    .swiper-slide {
-      margin-bottom: 0; /* Sin margen entre slides */
-    }
-
-    .swiper-slide img {
+    .portfolio-images img {
       width: 100%;
       height: auto;
-      object-fit: contain;
+      margin-bottom: 20px; /* Margen entre las imágenes */
+      object-fit: cover;
       display: block;
     }
 
-    /* Agregar estilo para el contenedor para eliminar el borde inferior */
-    #portfolio-details {
-      padding-bottom: 0; /* Sin padding en la parte inferior */
+    /* Opcional: ocultar scrollbar en algunos navegadores */
+    .portfolio-images::-webkit-scrollbar {
+      width: 5px; /* Tamaño del scrollbar */
+    }
+
+    .portfolio-images::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.3); /* Color del scrollbar */
+      border-radius: 5px;
     }
   </style>
+
 </head>
 
 <body>
@@ -81,37 +69,17 @@
           <p class="portfolio-text">Shibari photos taken at Daruma Berlin</p>
 
           <div class="col-lg-12 foto" style="margin: auto;">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/sezen/2.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/sezen/1.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/sezen/2.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/sezen/7.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/sezen/4.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/sezen/5.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/sezen/6.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/sezen/8.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/sezen/9.jpg" alt="">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
+            <!-- Nuevo contenedor de imágenes sin slider -->
+            <div class="portfolio-images">
+              <img src="assets/img/portfolio/sezen/2.jpg" alt="">
+              <img src="assets/img/portfolio/sezen/1.jpg" alt="">
+              <img src="assets/img/portfolio/sezen/2.jpg" alt="">
+              <img src="assets/img/portfolio/sezen/7.jpg" alt="">
+              <img src="assets/img/portfolio/sezen/4.jpg" alt="">
+              <img src="assets/img/portfolio/sezen/5.jpg" alt="">
+              <img src="assets/img/portfolio/sezen/6.jpg" alt="">
+              <img src="assets/img/portfolio/sezen/8.jpg" alt="">
+              <img src="assets/img/portfolio/sezen/9.jpg" alt="">
             </div>
           </div>
 
