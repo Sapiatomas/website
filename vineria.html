@@ -22,7 +22,6 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
 
   <!-- Template Main CSS File -->
@@ -34,8 +33,12 @@
       max-height: 500px; /* Altura máxima del contenedor */
       overflow-y: auto; /* Permitir desplazamiento vertical */
       padding-top: 30px; /* Ajustar el padding superior */
-      scrollbar-width: thin; /* Ancho de la scrollbar en Firefox */
-      -ms-overflow-style: -ms-autohiding-scrollbar; /* Scrollbar en IE y Edge */
+      scrollbar-width: none; /* Para navegadores Firefox */
+      -ms-overflow-style: none; /* Para IE y Edge */
+    }
+
+    .scroll-container::-webkit-scrollbar {
+      display: none; /* Para navegadores Webkit como Chrome y Safari */
     }
 
     .scroll-container img {
